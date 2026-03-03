@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <div class="logo">
+                <span id="nome">CRUD - Sistema de gerenciamento de clientes</span>                
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="primeiro"><a href="index.html">CRIAR</a></li>
+                    <li><a href="remove.html">REMOVER</a></li>
+                    <li><a href="search.html">PESQUISAR</a></li>
+                    <li><a href="delall.html">DELETAR TUDO</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="blocodenotas">
+                <h1></h1>
+            </div>
+            <div id="criar">
+                <br>
+                <h1>Cadastrar cliente</h1>
+                <hr>
+                <p class="pconteudo">Coloque as informações para criar um novo cliente no banco de dados:</p>
+                <br>
+                <form>
+                    <label for="nome2">
+                        <p class="pconteudo" style="text-align: center; margin: 5px;">Nome</p>
+                    </label>
+                    <input type="text" required id="nome2" name="nome" placeholder="Digite o nome do cliente"><br>
+                    <label for="email">
+                        <p class="pconteudo" style="text-align: center; margin: 5px;">E-mail</p>
+                    </label>
+                    <input type="email" id="email" name="email" required placeholder="Digite o e-mail do cliente"><br>
+                    <label for="telefone">
+                        <p class="pconteudo" style="text-align: center; margin: 5px;">Telefone</p>
+                    </label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone do cliente" pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}" required><br>
+                    <input class="concluirbotao" type="submit" value="Concluir" name="criarcliente"><br>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
